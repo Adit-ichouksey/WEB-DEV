@@ -1,0 +1,93 @@
+<html>
+<head>
+   
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        body {
+            background-color: skyblue;
+            text-align: center;
+
+        }
+
+        h1 {
+            color: green;
+        }
+
+        .land {
+            background-color: rgb(24, 212, 24);
+            height: 100px;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+
+
+        }
+
+        .sun {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, rgb(255, 221, 0), red);
+            box-shadow: 10px 10px 15px orange;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            position: fixed;
+            top: 20px;
+            right: 30px;
+        }
+         .bln {
+            width: 50px;
+            height: 65px;
+            border-radius: 60%;
+            position: absolute;
+            bottom: -100px;
+            animation: fly 6s linear infinite;
+        }
+
+        .bln::after {
+            content: "";
+            width: 2px;
+            height: 40px;
+            background: #555;
+            position: absolute;
+            top: 65px;
+            left: 50%;
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-120vh);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1> Welcome to Balloon Festival🎈</h1>
+    <div class="sun"></div>
+    <div class="bln" style="left:10%; background:rgb(255, 1, 1); animation-delay:0s;"></div>
+    <div class="blnn" style="left:25%; background:rgb(255, 255, 68); animation-delay:2s;"></div>
+    <div class="bln" style="left:40%; background:rgb(103, 255, 103); animation-delay:4s;"></div>
+    <div class="bln" style="left:55%; background:rgb(255, 190, 71); animation-delay:1s;"></div>
+    <div class="bln" style="left:70%; background:rgb(255, 98, 255); animation-delay:3s;"></div>
+    <div class="bln" style="left:85%; background:pink; animation-delay:5s;"></div>
+    <div class="land"></div>
+    <div>
+
+    </div>
+
+</body>
+
+</html>
